@@ -1,0 +1,219 @@
+{
+    "Title": "Home Intruder",
+    "Credits": "Created by Aarohan Khadka.",
+    "InitialLocation": "Porch",
+    "Locations": {
+        "Porch": {
+            "Status": false,
+            "Body": "The door appears to be unlocked.",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Open the door",
+                    "Target": "Living_Room"
+                },
+                {
+                    "Traveled": false,  
+                    "Text": "Turn back and leave",
+                    "Target": "Exit"
+                }
+            ]
+        },
+        "Exit": {
+            "Body": "It's foolish they kept their door unlocked"
+        },
+        "Living_Room": {
+            "Status": false,
+            "Body": "Woah its pretty spacy in here, the owners must be rich",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the Porch",
+                    "Target": "Porch"
+                },
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the master bedroom",
+                    "Target": "Master_Bedroom"
+                },
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the first bedroom",
+                    "Target": "Bedroom_1"
+                },
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the bathroom",
+                    "Target": "Bathroom"
+                },{
+                    "Traveled": false,  
+                    "Text": "Enter the kitchen",
+                    "Target": "Kitchen"
+                },{
+                    "Traveled": false,  
+                    "Text": "Enter the backyard",
+                    "Target": "Backyard"
+                },{
+                    "Traveled": false,  
+                    "Text": "Enter the garage",
+                    "Target": "Garage"
+                },{
+                    "Traveled": false,  
+                    "Text": "Enter the basement",
+                    "Target": "Basement"
+                },{
+                    "Traveled": false,  
+                    "Text": "Go upstairs",
+                    "Target": "Upstairs"
+                }     
+            ],
+            "Discover":[
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the Couch",
+                    "Result": "The couch is very comfortable, you could probably take a nap on it"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the TV",
+                    "Result": "The TV is a 75 inch OLED, it looks very expensive"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the painting",
+                    "Result": "The painting is a landscape of a mountain, it looks like it was painted by a child"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the rug",
+                    "Result": "The rug is very soft, it looks like it was made of silk"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the family photo",
+                    "Result": "They look very happy, almost too happy, like they are hiding something"
+                }
+            ]
+        },
+        "Master_Bedroom": {
+            "Body": "This is the master bedroom, it looks very luxurious.",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the master bathroom",
+                    "Target": "Master_Bathroom"
+                },
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the living room",
+                    "Target": "Living_Room"
+                }
+            ],
+            "Discover":[
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the bed",
+                    "Result": "The bed is a king size, it looks very comfortable"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the dresser",
+                    "Result": "The dresser is made of mahogany, it looks very expensive"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the closet",
+                    "Result": "The closet is very spacious, it looks like it could fit a lot of clothes"
+                }
+            ]
+        },
+        "Master_Bathroom": {
+            "Body": "This is the master bathroom, it looks very luxurious.",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the master bedroom",
+                    "Target": "Master_Bedroom"
+                }
+            ],
+            "Discover":[
+                {
+                    "Interacted": false,  
+                    "Option": "Look in the cabinet",
+                    "Result": "The cabinet is full of a lot of medicine, especially painkillers, it looks like they have a lot of health issues"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the shower",
+                    "Result": "The shower has a rain showerhead, it looks very expensive"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the sink",
+                    "Result": "The sink is made of marble, it looks very expensive"
+                }
+            ]
+        },
+        "Bedroom_1": {
+            "Body": "It looks to be a guest bedroom as a suitcase is open on the bed and there are no personal items in the room.",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the living room",
+                    "Target": "Living_Room"
+                }
+            ],
+            "Discover":[
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the suitcase",
+                    "Result": "The suitcase is open and empty, it looks like someone just left in a hurry"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the bed",
+                    "Result": "The bed is a queen size, it looks very comfortable"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the nightstand",
+                    "Result": "The nightstand is made of oak, it looks very expensive and has some medication on it"
+                }
+            ]
+        },
+        "Bathroom": {
+            "Body": "This is the bathroom, it looks very clean.",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the living room",
+                    "Target": "Living_Room"
+                }
+            ],
+            "Discover":[
+                {
+                    "Interacted": false,             
+                    "Option": "Look in the cabinet",
+                    "Result": "The cabinet is fairly empty, there are some basic toiletries"
+                },
+                {
+                    "Interacted": false,             
+                    "Option": "Look at the bathtub",
+                    "Result": "The bathtub is very large"
+                },
+                {
+                    "Interacted": false,             
+                    "Option": "Look at the shower",
+                    "Result": "The shower has a rain showerhead, it looks very expensive"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the sink",
+                    "Result": "The sink is made of marble, it looks very expensive"
+                }
+            ]
+
+        }
+        
+    }
+}

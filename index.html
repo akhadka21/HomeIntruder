@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        body > * {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .choice-button,
+        .discover-button {
+            display: block;
+            margin: 8px auto 8px 0;
+            padding: 14px 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .choice-button {
+            background: #2d7a2d;
+            color: white;
+        }
+
+        .discover-button {
+            background: #1565c0;
+            color: white;
+        }
+
+        .choice-button:hover {
+            background: #3ea23e;
+        }
+
+        .choice-button:active {
+            background: #1f5f1f;
+        }
+
+        .choice-button.travelled {
+            background: #8b5a12;
+        }
+
+        .choice-button.travelled:hover {
+            background: #b17524;
+        }
+
+        .discover-button:hover {
+            background: #1f78d5;
+        }
+
+        .discover-button:active {
+            background: #0f4fa0;
+        }
+
+        .discover-button.interacted {
+            background: #720fa0;
+        }
+
+        .discover-button.interacted:hover {
+            background: #8c1fd5;
+        }
+
+
+
+        
+    </style>
+    <script src="engine.js"></script>
+    <script src="rules.js"></script>
+</head>
+<body>
+</body>
+</html>
