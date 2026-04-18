@@ -1,0 +1,28 @@
+How to Beat the game:
+>Begin the story
+>Open the door
+>Look at the bookshelf | Obtained garage key
+>Enter the garage | Cannot enter unless you have the garage key ***
+>Look under the car | Obtained vault key
+>Enter the living room
+>Enter the backyard
+>Enter the shed
+>Look at the table | Obtained lantern to see in the basement
+>Enter the backyard
+>Enter the living room  
+>Enter the basement | Cannot enter unless you have the lantern ***
+>Open the vault door | Cannot open unless you have the vault key ***
+>The end. 
+
+How to get the carousel: ***
+>Begin the story
+>Open the door
+>Enter the master bedroom
+>Enter the math bathroom
+>Play with the carousel toy
+
+Item system is list that contains boolean keys
+
+Babelfish Puzzle has not been implmented
+
+Also there is some "lore" in the game 
