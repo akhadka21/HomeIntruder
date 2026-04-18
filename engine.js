@@ -25,6 +25,13 @@ class Engine {
         this.currLocationContainer = document.body.appendChild(document.createElement("div"));
 
         this.visitedLocations = new Set();
+        this.GameWorldItem = {
+            hasBookKey: false,
+            hasLantern: false,
+            hasGarageKey: false,
+            hasVaultKey: false,
+            carouselStatus: false
+        };
 
         fetch(storyDataUrl).then(
             (response) => response.json()

@@ -4,7 +4,6 @@
     "InitialLocation": "Porch",
     "Locations": {
         "Porch": {
-            "Status": false,
             "Body": "The door appears to be unlocked.",
             "Choices": [
                 {
@@ -23,12 +22,11 @@
             "Body": "It's foolish they kept their door unlocked"
         },
         "Living_Room": {
-            "Status": false,
             "Body": "Woah its pretty spacy in here, the owners must be rich",
             "Choices": [
                 {
                     "Traveled": false,  
-                    "Text": "Enter the Porch",
+                    "Text": "Enter the porch",
                     "Target": "Porch"
                 },
                 {
@@ -92,7 +90,13 @@
                     "Interacted": false,  
                     "Option": "Look at the family photo",
                     "Result": "They look very happy, almost too happy, like they are hiding something"
+                },{
+                    "Interacted": false,  
+                    "Option": "Look at the bookshelf",
+                    "Result": "The bookshelf is full of books and there appears to be a green key",
+                    "bookKey": false
                 }
+
             ]
         },
         "Master_Bedroom": {
@@ -140,7 +144,7 @@
                 {
                     "Interacted": false,  
                     "Option": "Look in the cabinet",
-                    "Result": "The cabinet is full of a lot of medicine, especially painkillers, it looks like they have a lot of health issues"
+                    "Result": "The cabinet is full of a lot of medicine, especially painkillers"
                 },
                 {
                     "Interacted": false,  
@@ -151,6 +155,12 @@
                     "Interacted": false,  
                     "Option": "Look at the sink",
                     "Result": "The sink is made of marble, it looks very expensive"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Play with the carousel toy",
+                    "Result": "The world begins to get burry and you feel dizzy",
+                    "carouselStatus": false   
                 }
             ]
         },
@@ -213,7 +223,199 @@
                 }
             ]
 
-        }
+        },
+        "Kitchen": {
+            "Body": "This is the kitchen, it looks very modern.",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the living room",
+                    "Target": "Living_Room"
+                },
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the garage",
+                    "Target": "Garage"
+                }
+
+            ],
+            "Discover":[
+                {
+                    "Interacted": false,  
+                    "Option": "Look in the fridge",
+                    "Result": "The fridge is a smart fridge, it contains mainly packaged meats"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look in the oven",
+                    "Result": "The oven is a smart oven, in the inside it looks dusty like it has never been used"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the sink",
+                    "Result": "The sink is made of marble, it looks very expensive"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the dishwasher",
+                    "Result": "The dishwasher is a smart dishwasher, it looks very expensive"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the pantry",
+                    "Result": "The pantry seems be only contain teas and coffees"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the island",
+                    "Result": "The island is made of marble, it looks very expensive"
+                }
+            ]
         
+        
+        },
+        "Garage": {
+            "Body": "This is the garage, it looks very spacious.",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the living room",
+                    "Target": "Living_Room"
+                },
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the kitchen",
+                    "Target": "Kitchen"
+                },
+                {
+                    "Traveled": false,
+                    "Text": "Enter the backyard",
+                    "Target": "Backyard"
+                }
+
+            ],
+            "Discover":[
+                {
+                    "Interacted": false,  
+                    "Option": "Look under the car",
+                    "Result": "There appears to be a red key",
+                    "VaultKey": false
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the tools",
+                    "Result": "The tools seem to be worn out from use"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the workbench",
+                    "Result": "The workbench is a dark red color"
+                }
+            ]
+        },
+        "Backyard": {
+            "Body": "This is the backyard, it looks very well maintained.",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the living room",
+                    "Target": "Living_Room"
+                },
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the garage",
+                    "Target": "Garage"
+                },
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the shed",
+                    "Target": "Shed"
+                }
+            ],
+            "Discover":[
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the pool",
+                    "Result": "The pool is very clean"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the garden",
+                    "Result": "The garden is full of flowers but no crops"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the patio",
+                    "Result": "The patio has a grill and some outdoor furniture"
+                }
+            ]
+        },
+        "Shed":{
+            "Body": "This is the shed, it looks very old.",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the backyard",
+                    "Target": "Backyard"
+                }
+            ],
+            "Discover":[
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the lawnmower",
+                    "Result": "The lawnmower is very old and rusty"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the gardening tools",
+                    "Result": "The gardening tools are very old and rusty"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the table",
+                    "Result": "The table has a lantern on it",
+                    "shedLantern": false
+                }
+            ]
+        },
+        "Basement": {
+            "Body": "This is the basement, thankfully I have a lantern with me. There appears to be scratch marks on the wall and weird contraptions in the room, it looks like some sort of lab.",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the living room",
+                    "Target": "Living_Room"
+                },{
+                    "Traveled": false,  
+                    "Text": "Open the vault door",
+                    "Target": "Vault"
+                }
+            ],
+            "Discover":[
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the furnace",
+                    "Result": "The furnace feels hot like it was recently used"
+                },
+                {
+                    "Interacted": false,  
+                    "Option": "Look at the storage boxes",
+                    "Result": "The storage boxes are full of old clothes and toys"
+                }
+            ]
+        },
+        "Upstairs": {
+            "Body": "Looks like they are renovating the upstairs, there is construction tape blocking off the stairs and there are no lights on maybe it will be finished soon",
+            "Choices": [
+                {
+                    "Traveled": false,  
+                    "Text": "Enter the living room",
+                    "Target": "Living_Room"
+                }
+            ]
+        },
+        "Vault": {
+            "Body": "It looks like you interupted the feast"
+        }
     }
 }
